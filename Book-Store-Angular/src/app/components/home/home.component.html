@@ -1,0 +1,16 @@
+<app-navbar></app-navbar>
+
+<div class="card container" *ngFor="let i of book" style="width: 20rem;">
+ <img class="bg" src="../../../assets/img/sharon-mccutcheon-eMP4sYPJ9x0-unsplash.jpg">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><b>Book Name :</b> {{i.bookName}}</li>
+    <li class="list-group-item"> <b>Authour :</b> {{i.author}}</li>
+    <li class="list-group-item">
+      <p class="info"><b>Price :</b> &#x20b9; {{i.price}}</p>
+    </li>
+    <li class="list-group-item">
+      <button class="btn btn-lg btn-success" [routerLink]="['/bookdetails',i.bookId]"> Buy </button>
+    </li>
+  </ul>
+</div>
+

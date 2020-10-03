@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+
+  <a routerLink="/"  class="nav-item text-white nav-link ">Home</a>
+
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <div class=" txt navbar-nav ml-auto">
+      <div class="navbar-nav">
+        <a *ngIf="loginservice.isUserLogin()" routerLink="/userdetails" class="nav-item text-white nav-link">Profile: {{user.userName}}</a>
+      </div>
+
+
+      <a *ngIf="!loginservice.isUserLogin()" routerLink="/login" class="nav-item text-white nav-link">Login</a>
+
+      <a  *ngIf="loginservice.isUserLogin()" routerLink="/logout"  class="nav-item text-white nav-link ">Logout</a>
+
+      <a *ngIf="!loginservice.isUserLogin()" routerLink="/signup" class="nav-item text-white nav-link">SignUp</a>
+    </div>
+  </div>
+</nav>

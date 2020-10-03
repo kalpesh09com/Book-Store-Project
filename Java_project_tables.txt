@@ -1,0 +1,33 @@
+table 1 : books
+
+field name : 
+
+Books_Id (Primary Key), datatype:-int
+Book_Name,  datatype:-varchar
+Author,   datatype:-varchar
+Price,    datatype:-int
+
+table 2 : customer
+
+Customer_Id (Primary Key)
+Name,  datatype:-varchar
+Phone_No, datatype:-bigint
+Password, datatype:-varchar
+email, datatype:-varchar
+Address_Line1, datatype:-varchar
+Address_Line2, datatype:-varchar
+City, datatype:-varchar
+Pincode, datatype:-int
+
+
+table 3 : order details
+
+Order_Id (Primary Key) , datatype:-int
+Customer_Name, datatype:-varchar
+Phone_No , datatype:-bigint
+Address , datatype:-varchar
+Quantity , datatype:-int
+B_Id(Books_Id)	(Foreign Key)	,datatype:-int
+Order_Date,  datatype:-varchar 
+
+
