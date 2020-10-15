@@ -1,0 +1,13 @@
+.footer{
+  position: fixed;
+  bottom: -35px;
+  width: 100%;
+  padding: 20px;
+}
+a:link {
+  color: white;
+}
+.footer-title{
+  color: white;
+}
+

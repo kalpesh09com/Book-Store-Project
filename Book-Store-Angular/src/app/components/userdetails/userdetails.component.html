@@ -1,0 +1,66 @@
+<app-navbar></app-navbar>
+
+<div class="container-fluid">
+  <div style="float: left;" class="container w-50 emp-profile">
+    <h2 style="font-weight: bold; margin-bottom: 1px; " class="text-primary">User Profile</h2><br>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="profile-head">
+          <h4>
+            {{user.userName}}
+          </h4>
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <input type="submit" [routerLink]="['/uuc',user.id]" class="btn btn-primary" name="btnAddMore"
+               value="Edit Profile" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="tab-content profile-tab" id="myTabContent">
+
+          <div class="row">
+            <div class="col-md-6">
+              <label>Name</label>
+            </div>
+            <div class="col-md-6">
+              <p>{{user.userName}}</p>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-md-6">
+              <label>Email</label>
+            </div>
+            <div class="col-md-6">
+              <p>{{user.email}}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <label>Phone No</label>
+            </div>
+            <div class="col-md-6">
+              <p>{{user.phoneno}}</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <label>Address</label>
+            </div>
+            <div class="col-md-6">
+              <p>{{user.city}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
